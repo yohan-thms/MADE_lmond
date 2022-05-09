@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2 family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+	margin: 0px;
+}
+
+/* Barre de navigation */
+header.header {
+	display: flex;
+	align-items: flex-end;
+	position:sticky;
+	top: 0px;
+	margin-left: 70PX;
+	margin-right: 70px;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	background-color: white;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+}
+
+header.header img {
+	width: 115px;
+}
+
+nav.Nav{
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+	margin-left: 50px;
+}
+
+nav.Nav a{
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 11px;
+	color: black;
+}
+
+/* 1er page */
+.main {
+	background: url("Images/Image_Archive_Ecole_BOULLE_001.png");
+	background-size: 360px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-top: 90px;
+	margin-bottom: 100px;
+}
+
+main.main h1{
+	width: 690px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 40px;
+	color: black;
+	letter-spacing: 11.5px;
+}
+
+main.main h2{
+	width: 690px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 40px;
+	color: transparent;
+	font-style: italic;
+	letter-spacing: 20px;
+	-webkit-text-stroke: 1.5px black;
+	text-align: justify;
+	text-justify:inter-character;
+}
+
+/* Projet */
+.Projet{
+	display: flex;
+	margin-left: 70PX;
+	margin-right: 70px;
+	margin-top: 70px;
+	padding-top: 50px;
+	border-top: solid;
+	border-top-width: 1px;
+}
+
+.Article{
+	width: 30%;
+}
+
+.Article h3{
+	margin-top: 0px;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.Article h4{
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+div .Article p.Description{
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 12px;
+	text-align: justify;
+}
+
+div .Article p.Detail{
+	font-family: Roboto;
+	font-weight: 100;
+	font-size: 12px;
+	text-align: justify;
+	font-style: italic;
+}
+.Galerie{
+	width: 70%;
+	height: 100%;
+	margin-left:50px;
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 50px;
+	grid-column-gap: 50px;
+}
+
+.image img{
+	width: 100%;
+}
+
+/* Pieds de page */
+footer .Contact{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 70px;
+	margin-bottom: 60px;
+	border-top: solid;
+	border-top-width: 1px;
+	padding-top: 60px;
+}
+
+footer .Contact a{
+	margin-right: auto;
+	margin-left: auto;
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 11px;
+	color: black;
+}
+
+/* Télephone */
+@media screen and (max-width:640px){
+
+header.header {
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+header.header img {
+	width: 90px;
+}
+
+nav.Nav{
+	margin-right: auto;
+}
+
+nav.Nav a{
+	font-size: 10px;
+}
+	
+.main {
+	background-size: 200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 120px;
+	margin-bottom: 180px;
+}
+
+main.main h1{
+	width: 300px;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+main.main h2{
+	width: 300px;
+	font-size: 20px;
+	letter-spacing: 7px;
+}
+	
+.Projet{
+	display: block;
+	margin-left: 35PX;
+	margin-right: 35px;
+	margin-top: 70px;
+	padding-top: 50px;
+}
+	
+.Article{
+	width: 100%;
+}
+
+.Galerie{
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 70px;
+	grid-template-columns: 1fr;
+	grid-row-gap: 35px;
+}
+	
+footer .Contact{
+	grid-template-columns: 1fr;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+footer .Contact a{
+	margin-bottom: 20px;
+}
+}
